@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>李冠廷的程式設計與競賽經歷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        nav {
+            background-color: #ffb84d;
+            display: flex;
+            justify-content: center;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 25px;
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #f57c00;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1300px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            transition: all 0.5s ease;
+        }
+        section:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #ff8c00;
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h3 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff8c00;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .contact-info {
+            list-style: none;
+            font-size: 20px;
+            margin-top: 20px;
+            padding-left: 0;
+        }
+        .contact-info li {
+            margin: 15px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+        .button {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 16px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #f57c00;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button:active {
+            transform: translateY(1px);
+            box-shadow: none;
+        }
+        .container div {
+            position: relative;
+        }
+        .container div:hover h3 {
+            color: #f57c00;
+            text-decoration: underline;
+        }
+        .cta {
+            background-color: #ff8c00;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .cta p {
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>李冠廷的程式設計與競賽之路</h1>
+        <p>探索程式設計的無限可能</p>
+    </header>
+
+    <nav>
+        <a href="#about">關於我</a>
+        <a href="#experience">競賽經歷</a>
+        <a href="#projects">專案經歷</a>
+        <a href="#contact">聯絡我</a>
+    </nav>
+
+    <section id="about">
+        <h2>關於我</h2>
+        <div class="container">
+            <div>
+                <h3>自我介紹</h3>
+                <p>我是李冠廷，來自楊梅高中，對程式設計、數學以及電路板燒錄擁有深厚的興趣，特別是在 C++ 編程語言的學習上，我找到了無限的樂趣。我視程式設計為一種創造的工具，能夠將抽象的想法轉化為具體的應用，這樣的過程對我而言充滿了挑戰與成就感。</p>
+            </div>
+            <div>
+                <h3>學習背景</h3>
+                <p>自小我便對邏輯產生濃厚興趣，這種興趣引導我進入了程式設計的世界。無論是參加程式設計夏令營，還是挑戰各種線上程式競賽，我都在不斷積累經驗，拓展自己的知識與技能。我不僅學會了編程技巧，也學會了如何在競爭中保持冷靜、分析問題，並尋找最佳解決方案。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>競賽經歷</h2>
+        <div class="container">
+            <div>
+                <h3>主要競賽</h3>
+                <p>我積極參與了多個程式設計競賽與活動，從學校內部的數理競賽，到國內外知名的編程平台，像是 Zerojudge、AtCoder 以及 CSES 平台等，這些經歷讓我在程式設計上取得了顯著的進步。我參加過台大資訊探索營、C++ 實作夏令營等，這些營隊讓我拓展了視野，也結識了許多志同道合的朋友。</p>
+            </div>
+            <div>
+                <h3>競賽成就</h3>
+                <p>我在校內數理競賽中獲得過資訊科第一名，這對我來說是一個重要的肯定，證明了我在程式設計和算法方面的實力。雖然在APCS測驗中的表現並不理想，但這反而激勵我更加努力地學習並提升自己的能力。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>專案經歷</h2>
+        <div class="container">
+            <div>
+                <h3>專案展示</h3>
+                <p>除了競賽，我也積極參與了多個程式設計專案。這些專案主要圍繞著軟硬體結合、電路板燒錄等領域，旨在解決實際問題。例如，我曾設計過一個簡單的智慧型電池管理系統，並成功將其應用在我們學校的電子實驗中，這不僅增強了我的編程技巧，也加深了我對硬體設計的理解。</p>
+            </div>
+            <div>
+                <h3>技術堆疊</h3>
+                <p>在這些專案中，我使用過多種編程語言和工具，包括 C++、Python、Arduino等。我學會了如何將這些技術結合，解決問題並實現創新。在未來，我希望能將這些技術帶入大學，進一步探索軟硬體整合的無限潛力。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我</h2>
+        <div class="container">
+            <div>
+                <h3>聯絡方式</h3>
+                <ul class="contact-info">
+                    <li>電子郵件: <a href="mailto:y6875tj9a@gmail.com">y6875tj9a@gmail.com</a></li>
+                    <li>電話: 0966785382</li>
+                </ul>
+                <a href="mailto:y6875tj9a@gmail.com" class="button">寄送電子郵件</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 李冠廷 | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
